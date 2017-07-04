@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eBk-Rj-LZV"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Uu-dQ-X3I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0BK-dX-sbY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWP-gG-YuN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTj-Ia-4uP">
+                                <rect key="frame" x="126" y="599" width="122" height="48"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Press to Record"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gTj-Ia-4uP" firstAttribute="centerX" secondItem="dWP-gG-YuN" secondAttribute="centerX" id="1cf-MF-ueQ"/>
+                            <constraint firstItem="7Uu-dQ-X3I" firstAttribute="top" secondItem="dWP-gG-YuN" secondAttribute="bottom" id="RjE-F8-wnp"/>
+                            <constraint firstItem="dWP-gG-YuN" firstAttribute="leading" secondItem="0BK-dX-sbY" secondAttribute="leading" id="ZJf-Kn-kly"/>
+                            <constraint firstItem="dWP-gG-YuN" firstAttribute="top" secondItem="0BK-dX-sbY" secondAttribute="top" id="oTo-fx-9tO"/>
+                            <constraint firstItem="gTj-Ia-4uP" firstAttribute="top" secondItem="dWP-gG-YuN" secondAttribute="bottom" constant="-68" id="rpd-2l-1Ey"/>
+                            <constraint firstAttribute="trailing" secondItem="dWP-gG-YuN" secondAttribute="trailing" id="xSJ-lx-5CY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recordButton" destination="gTj-Ia-4uP" id="aEK-vv-gC8"/>
+                        <outlet property="sceneView" destination="dWP-gG-YuN" id="ed5-NF-UMX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>

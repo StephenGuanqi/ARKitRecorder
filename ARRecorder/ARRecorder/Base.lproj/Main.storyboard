@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HgC-Lh-lxi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Buo-LW-elp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AAs-HB-ivN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFB-Rt-p3o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9P-rD-gGh">
+                                <rect key="frame" x="114" y="597" width="147" height="41"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Tap To Record"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eFB-Rt-p3o" firstAttribute="leading" secondItem="AAs-HB-ivN" secondAttribute="leading" id="1XX-4Z-Nwy"/>
+                            <constraint firstItem="Buo-LW-elp" firstAttribute="top" secondItem="eFB-Rt-p3o" secondAttribute="bottom" id="A2w-a4-PyV"/>
+                            <constraint firstAttribute="trailing" secondItem="eFB-Rt-p3o" secondAttribute="trailing" id="Et7-7A-oGo"/>
+                            <constraint firstItem="z9P-rD-gGh" firstAttribute="centerX" secondItem="eFB-Rt-p3o" secondAttribute="centerX" id="Rk6-el-NTJ"/>
+                            <constraint firstItem="eFB-Rt-p3o" firstAttribute="top" secondItem="AAs-HB-ivN" secondAttribute="top" id="t2c-iM-KVv"/>
+                            <constraint firstItem="z9P-rD-gGh" firstAttribute="top" secondItem="eFB-Rt-p3o" secondAttribute="bottom" constant="-70" id="xCL-eg-RIh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recordButton" destination="z9P-rD-gGh" id="MXQ-ds-VNp"/>
+                        <outlet property="sceneView" destination="eFB-Rt-p3o" id="psl-9U-3Wf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
